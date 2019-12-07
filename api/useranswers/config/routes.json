@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/useranswers",
+      "handler": "Useranswers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/useranswers/count",
+      "handler": "Useranswers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/useranswers/:id",
+      "handler": "Useranswers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/useranswers",
+      "handler": "Useranswers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/useranswers/:id",
+      "handler": "Useranswers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/useranswers/:id",
+      "handler": "Useranswers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

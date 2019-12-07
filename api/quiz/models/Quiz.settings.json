@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "quizzes",
+  "info": {
+    "name": "quiz",
+    "description": "unitContents compiled together"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Adi": {
+      "type": "string"
+    },
+    "Cover": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

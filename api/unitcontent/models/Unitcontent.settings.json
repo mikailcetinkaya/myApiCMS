@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "unitcontents",
+  "info": {
+    "name": "unitcontent",
+    "description": "Unit Content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "QuestionType": {
+      "enum": [
+        "Picture",
+        "Text",
+        "MediaPositionedInText",
+        "MultipleMediaProgrammedByText"
+      ],
+      "type": "enumeration"
+    },
+    "Text": {
+      "type": "richtext"
+    },
+    "Media": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "RightAnswer": {
+      "type": "string"
+    },
+    "contents": {
+      "model": "contents"
+    },
+    "secondlevelcategory": {
+      "model": "secondlevelcategory",
+      "via": "unitcontents"
+    }
+  }
+}

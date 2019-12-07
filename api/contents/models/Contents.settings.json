@@ -1,0 +1,18 @@
+{
+  "connection": "default",
+  "collectionName": "contents",
+  "info": {
+    "name": "contents",
+    "description": "main content type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

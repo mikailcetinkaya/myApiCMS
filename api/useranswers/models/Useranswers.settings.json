@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "useranswers",
+  "info": {
+    "name": "useranswers",
+    "description": "Answers from Users"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "Answer": {
+      "type": "string"
+    },
+    "unitcontent": {
+      "model": "unitcontent"
+    }
+  }
+}

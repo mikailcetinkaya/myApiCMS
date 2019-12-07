@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "firstdegreeseperations",
+  "info": {
+    "name": "firstlevelcategory",
+    "description": "Content level separation for first level"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "secondlevelcategories": {
+      "collection": "secondlevelcategory",
+      "via": "firstlevelcategory"
+    }
+  }
+}

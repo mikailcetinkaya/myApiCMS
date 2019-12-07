@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/secondlevelcategories",
+      "handler": "Secondlevelcategory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/secondlevelcategories/count",
+      "handler": "Secondlevelcategory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/secondlevelcategories/:id",
+      "handler": "Secondlevelcategory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/secondlevelcategories",
+      "handler": "Secondlevelcategory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/secondlevelcategories/:id",
+      "handler": "Secondlevelcategory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/secondlevelcategories/:id",
+      "handler": "Secondlevelcategory.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
