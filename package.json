@@ -5,12 +5,15 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
+    "developWatchAdmin": "strapi develop --watch-admin",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^16.0.0",
+    "@ckeditor/ckeditor5-react": "^2.0.0",
     "jquery": "^3.4.1",
     "knex": "^0.20.3",
     "pg": "^7.14.0",

@@ -24,6 +24,9 @@
     },
     "Description": {
       "type": "richtext"
+    },
+    "unitcontents": {
+      "collection": "unitcontent"
     }
   }
 }
