@@ -7,12 +7,20 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "firstlevelcategories": {
+      "collection": "firstlevelcategory",
+      "via": "contents",
+      "dominant": true
     }
   }
 }

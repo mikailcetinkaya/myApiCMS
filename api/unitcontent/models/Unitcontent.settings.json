@@ -34,9 +34,6 @@
     "RightAnswer": {
       "type": "string"
     },
-    "contents": {
-      "model": "contents"
-    },
     "secondlevelcategory": {
       "model": "secondlevelcategory",
       "via": "unitcontents"
