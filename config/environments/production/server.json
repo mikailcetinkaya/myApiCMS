@@ -1,9 +1,12 @@
 {
-  "host": "api.mikailcetinkaya.com",
-  "port": "", 
+  "host": "localhost",
+  "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
-    "enabled": false
+    "enabled": true,
+    "ssl":true,
+    "host":"api.mikailcetinkaya.com",
+    "port": 8443
   },
   "cron": {
     "enabled": false
